@@ -14,8 +14,10 @@ function generatePassword() {
     "How many characters do you want your password to be?"
   );
 
-  if (length < 8) {
+  if (length < 8 || length > 128) {
     alert("Sorry, password needs to be between 8 and 128 characters");
+    return "Sorry, password needs to be between 8 and 128 characters";
+    // return generatePassword() 
   }
 
   var specialCharacters = confirm(

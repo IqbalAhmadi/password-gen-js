@@ -31,15 +31,16 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background: linear-gradient(358deg, #30e98f, #6c34dd);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  box-shadow: rgba(0, 0, 0, 0.342) 0 0 5px;
+  color: hsl(324, 22%, 95%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  border-radius: 10px;
 }
 
 .card-header::after {
@@ -92,6 +93,13 @@ button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
+
+.btn:hover {
+  background:blueviolet;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 2px 2px gray;
+} 
 
 .float-right {
   float: right;
